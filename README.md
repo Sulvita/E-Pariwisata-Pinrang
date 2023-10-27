@@ -49,7 +49,7 @@ Pindah ke direktori proyek yang telah Anda clone, dan jalankan perintah berikut 
 
 3. **Setting .env**
 
-Salin berkas `.env.example` menjadi `.env` dan konfigurasi pengaturan database Anda di dalam berkas `.env` denngan memasukkan perintah sebagai berikut 
+Salin berkas `.env.example` menjadi `.env` dan konfigurasi pengaturan database Anda di dalam berkas `.env` denngan memasukkan perintah sebagai berikut :
 - cp .env.example .nc
 
 4. **Generate Kunci Aplikasi**
