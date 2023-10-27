@@ -31,7 +31,7 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7">
             <div class="card mt-6">
                 <div id="carousel-controls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -166,7 +166,8 @@
                                         Aplikasi Google Maps Yang Terinstall</a>
                                 </div>
                             </div>
-                            @if (!is_null($destinasiBuatan->latitudepenginapan) && !is_null($destinasiBuatan->longitudepenginapan))
+                            @if (!is_null($destinasiBuatan->latitudepenginapan) &&
+                            !is_null($destinasiBuatan->longitudepenginapan))
                             <div class="col-12 col-lg-6">
                                 <div class="">
                                     <span class="fw-bold me-2">Lokasi Penginapan Terdekat :</span>
@@ -265,7 +266,7 @@
                 <div class="card-header">
                     <div class="card-title">Commentar</div>
                 </div>
-                
+
                 @foreach ($destinasiBuatan->komentars as $komentar)
                 <div class="card-body pb-0">
                     <div class="media mb-1 overflow-visible d-block d-sm-flex">

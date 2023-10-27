@@ -1,4 +1,4 @@
-{{-- 
+{{--
 @extends('layouts.pengunjung')
 
 @section('container')
@@ -6,14 +6,15 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-12 col-md-12">
+        <div class="col-12 col-md-7">
             <div class="card mt-6">
                 <div id="carousel-controls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
                             <img class="d-block w-100 br-5" alt=""
-                                src="{{ asset('storage/' . $destinasikebudayaan->sampul) }}" data-bs-holder-rendered="true">
+                                src="{{ asset('storage/' . $destinasikebudayaan->sampul) }}"
+                                data-bs-holder-rendered="true">
                         </div>
                         @if ($destinasikebudayaan->gambar)
                         @foreach (json_decode($destinasikebudayaan->gambar) as $image)
@@ -81,7 +82,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-4">
                                 <div class="d-flex align-items-center mb-3 mt-3">
                                     <div class="me-4 text-center text-primary">
                                         <span><i class="fe fe-map-pin fs-20"></i></span>
@@ -142,7 +143,7 @@
 
         </div>
 
-        <div class="col-12 col-md-4 mt-6">
+        <div class="col-12 col-md-5 mt-6">
 
             @if(session('error'))
             <div class="alert alert-danger">
@@ -163,7 +164,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('pengunjung.kebudayaan.tambah-komentar', $destinasikebudayaan) }}" method="POST">
+                    <form action="{{ route('pengunjung.kebudayaan.tambah-komentar', $destinasikebudayaan) }}"
+                        method="POST">
                         @csrf
                         <div class="form-group">
                             <label for="nama">Nama</label>
@@ -193,7 +195,7 @@
 
         </div>
 
-        <div class="col-12 col-md-4 mt-6">
+        <div class="col-12 col-md-5 mt-6">
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">Commentar</div>
@@ -219,7 +221,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-4 mt-6">
+        <div class="col-12 col-md-5 mt-6">
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">Artikel Terkait</div>
@@ -312,7 +314,8 @@
 
                         <div class="carousel-item active">
                             <img class="d-block w-100 br-5" alt=""
-                                src="{{ asset('storage/' . $destinasikebudayaan->sampul) }}" data-bs-holder-rendered="true">
+                                src="{{ asset('storage/' . $destinasikebudayaan->sampul) }}"
+                                data-bs-holder-rendered="true">
                         </div>
                         @if ($destinasikebudayaan->gambar)
                         @foreach (json_decode($destinasikebudayaan->gambar) as $image)
@@ -508,7 +511,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('pengunjung.destinasi.tambah-komentar', $destinasikebudayaan) }}" method="POST">
+                    <form action="{{ route('pengunjung.destinasi.tambah-komentar', $destinasikebudayaan) }}"
+                        method="POST">
                         @csrf
                         <div class="form-group">
                             <label for="nama">Nama</label>

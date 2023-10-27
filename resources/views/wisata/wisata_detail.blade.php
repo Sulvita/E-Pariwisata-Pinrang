@@ -3,46 +3,47 @@
 @section('container')
 
 
-    <style>
-        /* Button no. 1 - Akan tampil di atas 768px */
-        @media (min-width: 769px) {
-            .button-1 {
-                display: block !important;
-            }
+<style>
+    /* Button no. 1 - Akan tampil di atas 768px */
+    @media (min-width: 769px) {
+        .button-1 {
+            display: block !important;
         }
-    
-        /* Button no. 1 - Akan disembunyikan di bawah 769px */
-        @media (max-width: 768px) {
-            .button-1 {
-                display: none !important;
-            }
+    }
+
+    /* Button no. 1 - Akan disembunyikan di bawah 769px */
+    @media (max-width: 768px) {
+        .button-1 {
+            display: none !important;
         }
-    
-        /* Button no. 2 - Akan tampil di bawah 769px */
-        @media (max-width: 768px) {
-            .button-2 {
-                display: block !important;
-            }
+    }
+
+    /* Button no. 2 - Akan tampil di bawah 769px */
+    @media (max-width: 768px) {
+        .button-2 {
+            display: block !important;
         }
-    
-        /* Button no. 2 - Akan disembunyikan di atas 768px */
-        @media (min-width: 769px) {
-            .button-2 {
-                display: none !important;
-            }
+    }
+
+    /* Button no. 2 - Akan disembunyikan di atas 768px */
+    @media (min-width: 769px) {
+        .button-2 {
+            display: none !important;
         }
-    </style>
+    }
+</style>
 
 <div class="container">
     <div class="row">
 
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7">
             <div class="card mt-6">
                 <div id="carousel-controls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img class="d-block w-100 br-5" alt="" src="{{ asset('storage/' . $destinasiWisata->sampul) }}" data-bs-holder-rendered="true">
+                            <img class="d-block w-100 br-5" alt=""
+                                src="{{ asset('storage/' . $destinasiWisata->sampul) }}" data-bs-holder-rendered="true">
                         </div>
                         @if ($destinasiWisata->gambar)
                         @foreach (json_decode($destinasiWisata->gambar) as $image)
@@ -162,24 +163,31 @@
                                     <div class="ms-auto">
                                         <div id="map" style="height: 250px;"></div>
                                     </div>
-                                   <a href="https://www.google.com/maps/search/?api=1&query={{ $destinasiWisata->latitude }},{{ $destinasiWisata->longitude }}" target="_blank" class="button-1 btn-sm mt-2 btn btn-primary block">Buka di Google Maps Browser</a>
-                                   <a href="https://www.google.com/maps/search/?api=1&query={{ $destinasiWisata->latitude }},{{ $destinasiWisata->longitude }}" target="_blank" class="button-2 btn-sm mt-2 btn block btn-primary">Buka di Aplikasi Google Maps Yang Terinstall</a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query={{ $destinasiWisata->latitude }},{{ $destinasiWisata->longitude }}"
+                                        target="_blank" class="button-1 btn-sm mt-2 btn btn-primary block">Buka di
+                                        Google Maps Browser</a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query={{ $destinasiWisata->latitude }},{{ $destinasiWisata->longitude }}"
+                                        target="_blank" class="button-2 btn-sm mt-2 btn block btn-primary">Buka di
+                                        Aplikasi Google Maps Yang Terinstall</a>
                                 </div>
                             </div>
-                            @if (!is_null($destinasiWisata->latitudepenginapan) && !is_null($destinasiWisata->longitudepenginapan))
+                            @if (!is_null($destinasiWisata->latitudepenginapan) &&
+                            !is_null($destinasiWisata->longitudepenginapan))
                             <div class="col-12 col-lg-6">
                                 <div class="">
                                     <span class="fw-bold me-2">Lokasi Penginapan Terdekat :</span>
                                     <div id="mappenginapan" style="height: 250px;"></div>
                                     <a href="https://www.google.com/maps/search/?api=1&query={{ $destinasiWisata->latitudepenginapan }},{{ $destinasiWisata->longitudepenginapan }}"
-                                        target="_blank" class="button-1 btn-sm mt-2 btn btn-primary block">Buka di Google Maps Browser</a>
+                                        target="_blank" class="button-1 btn-sm mt-2 btn btn-primary block">Buka di
+                                        Google Maps Browser</a>
                                     <a href="https://www.google.com/maps/search/?api=1&query={{ $destinasiWisata->latitudepenginapan }},{{ $destinasiWisata->longitudepenginapan }}"
-                                        target="_blank" class="button-2 btn-sm mt-2 btn block btn-primary">Buka di Aplikasi Google Maps Yang
+                                        target="_blank" class="button-2 btn-sm mt-2 btn block btn-primary">Buka di
+                                        Aplikasi Google Maps Yang
                                         Terinstall</a>
                                 </div>
                             </div>
                             @endif
-                            
+
                         </div>
                     </div>
                 </div>
@@ -187,7 +195,7 @@
 
         </div>
 
-        <div class="col-12 col-md-4 mt-6">
+        <div class="col-12 col-md-5 mt-6">
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">Artikel Terkait</div>
@@ -217,13 +225,13 @@
                 {{ session('error') }}
             </div>
             @endif
-            
+
             @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
             </div>
             @endif
-            
+
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">
@@ -235,12 +243,13 @@
                         @csrf
                         <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap" required>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="isi_komentar">Komentar</label>
-                            <textarea class="form-control" id="isi_komentar" name="isi_komentar" rows="5" placeholder="Isi komentar"
-                                required></textarea>
+                            <textarea class="form-control" id="isi_komentar" name="isi_komentar" rows="5"
+                                placeholder="Isi komentar" required></textarea>
                         </div>
                         <div class="form-group">
                             <label for="rating">Rating</label>
@@ -262,11 +271,11 @@
                 <div class="card-header">
                     <div class="card-title">Commentar</div>
                 </div>
-            
+
                 @foreach ($destinasiWisata->komentars as $komentar)
                 <div class="card-body pb-0">
                     <div class="media mb-1 overflow-visible d-block d-sm-flex">
-            
+
                         <div class="media-body overflow-visible">
                             <div class="border mb-5 p-4 br-5">
                                 <h5 class="mt-0">{{ $komentar->nama }}</h5>
@@ -283,7 +292,6 @@
             </div>
         </div>
 
-       
 
     </div>
 </div>
