@@ -63,12 +63,17 @@ Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan denngan mema
 - php artisan migrate
 - php artisan migrate:fresh --seed
 
+6. **storage link**
+Untuk memastikan berkas-berkas yang disimpan dalam direktori storage dapat diakses secara publik, Anda perlu menjalankan perintah sebagai berikut :
+- php artisan storage:link
 
-6. **Jalankan Server Lokal**
-
+7. **Jalankan Server Lokal**
 Gunakan perintah berikut untuk menjalankan server pengembangan Laravel denngan memasukkan perintah sebagai berikut :
 - php artisan serve
 - buka browser lalu akses http://localhost:8000
+
+
+
 
 
 
