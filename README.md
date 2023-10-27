@@ -8,10 +8,8 @@
 </p>
 
 ## E-PARIWISATA PINRANG
-Selamat datang di aplikasi E-PARIWISATA PINRANG, sebuah proyek perangkat lunak yang dibuat oleh Zulham Abidin. Aplikasi ini merupakan bagian dari upaya untuk menyelesaikan tugas akhir dalam rangka mengejar gelar Sarjana di Jurusan Teknik Informatika dan Komputer, Universitas Negeri Makassar.
+Selamat datang di aplikasi E-PARIWISATA PINRANG, sebuah proyek perangkat lunak yang dibuat oleh sebagai website developer Zulham Abidin dan berdasarkan Sulvita selaku peneliti. Aplikasi ini merupakan bagian dari upaya untuk menyelesaikan tugas akhir dalam rangka mengejar gelar Sarjana di Jurusan Teknik Informatika dan Komputer, Universitas Negeri Makassar.
 
-Latar Belakang
-Pengembangan aplikasi E-PARIWISATA PINRANG didasarkan pada instruksi yang diberikan oleh Zulvite, seorang pembimbing akademik yang memiliki pengalaman luas dalam industri teknologi informasi. Tujuan utama dari proyek ini adalah mengembangkan sebuah solusi perangkat lunak yang berfokus pada sektor pariwisata di wilayah Pinrang. Aplikasi ini bertujuan untuk memfasilitasi manajemen, promosi, dan pengelolaan destinasi wisata, serta meningkatkan pengalaman pelancong.
 
 Tentang Proyek
 Aplikasi E-PARIWISATA PINRANG adalah produk dari upaya kolaboratif antara Zulham Abidin sebagai pengembang utama dan Zulvite sebagai pembimbing proyek. Proyek ini melibatkan serangkaian tahap pengembangan yang mencakup analisis kebutuhan, perancangan sistem, pengembangan perangkat lunak, serta pengujian dan implementasi.
