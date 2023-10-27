@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Tentang E-PARIWISATA PINRANG
+## E-PARIWISATA PINRANG
 Selamat datang di aplikasi E-PARIWISATA PINRANG, sebuah proyek perangkat lunak yang dibuat oleh Zulham Abidin. Aplikasi ini merupakan bagian dari upaya untuk menyelesaikan tugas akhir dalam rangka mengejar gelar Sarjana di Jurusan Teknik Informatika dan Komputer, Universitas Negeri Makassar.
 
 Latar Belakang
