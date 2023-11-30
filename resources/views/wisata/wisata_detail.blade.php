@@ -254,12 +254,12 @@
                         <div class="form-group">
                             <label for="rating">Rating</label>
                             <select class="form-control" id="rating" name="rating" required>
-                                <option value="">Pilih rating</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
+                               <option value="">Pilih rating</option>
+                                <option value="1">1 - Sangat Tidak Direkomendasikan</option>
+                                <option value="2">2 - Tidak Direkomendasikan</option>
+                                <option value="3">3 - Cukup Direkomendasikan</option>
+                                <option value="4">4 - Direkomendasikan</option>
+                                <option value="5">5 - Sangat Direkomendasikan</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Tambah Komentar dan Rating</button>

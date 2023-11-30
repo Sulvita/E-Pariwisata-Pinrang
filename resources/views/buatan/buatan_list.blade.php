@@ -92,6 +92,14 @@
 
             <div class="row">
                 @foreach ($destinasiBuatanList as $destinasiBuatan)
+                @php
+                $rating = $destinasiBuatan->rating;
+                $ratingText = '';
+                
+                if ($rating >= 0 && $rating < 1.5) { $ratingText='Sangat Tidak Direkomendasikan' ; } elseif ($rating>= 1.5 && $rating <
+                        2.5) { $ratingText='Tidak Direkomendasikan' ; } elseif ($rating>= 2.5 && $rating < 3.5) {
+                            $ratingText='Cukup Direkomendasikan' ; } elseif ($rating>= 3.5 && $rating < 4.5) {
+                                $ratingText='Direkomendasikan' ; } else { $ratingText='Sangat Direkomendasikan' ; } @endphp
                 <div class="col-12 col-md-12 col-xl-12">
                     <div class="card">
                         <div class="row g-0">
@@ -101,10 +109,11 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $destinasiBuatan->nama }}</h5>
-                                    <p class="card-text">{{ Str::limit($destinasiBuatan->Deskripsi, 100) }}</p>
-                                    <p class="card-text"><small class="text-muted">{{
-                                            \Carbon\Carbon::parse($destinasiBuatan->created_at)->locale('id')->diffForHumans()
-                                            }}</small></p>
+                                    <p class="card-text">{{ Str::limit($destinasiBuatan->Deskripsi, 200) }}</p>
+                                    <div class="card-text"><small class="text-muted">Diunggah {{
+                                            \Carbon\Carbon::parse($destinasiBuatan->created_at)->locale('id')->diffForHumans() }}</small></div>
+                                    <div class="card-text mb-4"><small class="text-muted">Dengan Rating {{ number_format($rating, 1) }} ({{ $ratingText
+                                            }})</small></div>
                                     <a href="{{ route('pengunjung.buatan.show', $destinasiBuatan) }}"
                                         class="btn btn-primary">Lihat Detail</a>
                                 </div>

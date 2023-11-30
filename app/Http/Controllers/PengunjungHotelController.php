@@ -29,6 +29,10 @@ class PengunjungHotelController extends Controller
             $query->where('kategori', 'hotel');
         }
 
+        
+         // Order by rating descending
+         $query->orderBy('rating', 'desc'); // Ganti 'rating' dengan nama kolom rating yang sesuai
+
         // Get paginated results
         $destinasihotelList = $query->paginate(2); // Ganti 2 dengan jumlah item per halaman yang diinginkan
 

@@ -35,6 +35,10 @@ class PengunjungKulinerController extends Controller
             $query->where('kategori', 'buatan');
         }
 
+        
+         // Order by rating descending
+         $query->orderBy('rating', 'desc'); // Ganti 'rating' dengan nama kolom rating yang sesuai
+
         // Get paginated results
         $destinasiBuatanList = $query->paginate(2); // Ganti 2 dengan jumlah item per halaman yang diinginkan
 

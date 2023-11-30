@@ -70,17 +70,16 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="sampul">Sampul:</label>
-                                        <input type="file" required name="sampul" class="form-control-file"
-                                            id="sampul">
+                                        <input type="file" required name="sampul" class="form-control-file"  id="sampul">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="gambar">Gambar</label>
-                                        <input type="file" name="gambar[]" required id="gambar"
-                                            class="form-control-file" multiple>
+                                        <input type="file" name="gambar[]" required id="gambar" class="form-control-file" multiple>
                                     </div>
                                 </div>
+                                
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Pilih Lokasi Wisata Buatan</label>
@@ -88,6 +87,7 @@
                                         <div id="map" style="height: 400px;"></div>
                                     </div>
                                 </div>
+
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Pilih Lokasi Penginapan</label>
@@ -95,6 +95,7 @@
                                         <div id="mapPenginapan" style="height: 400px;"></div>
                                     </div>
                                 </div>
+
                                 <div class="col-12 col-lg-6 sembunyi">
                                     <div class="form-group">
                                         <label for="latitude" class="sr-only">Latitude (Titik Koordinat)</label>
@@ -102,6 +103,7 @@
                                             required readonly>
                                     </div>
                                 </div>
+
                                 <div class="col-12 col-lg-6 sembunyi">
                                     <div class="form-group">
                                         <label for="longitude" class="sr-only">Longitude (Titik Koordinat)</label>
@@ -109,6 +111,7 @@
                                             class="form-control" required readonly>
                                     </div>
                                 </div>
+
                                 <div class="col-12 col-lg-6 sembunyi">
                                     <div class="form-group">
                                         <label for="latitudepenginapan" class="sr-only">Latitude Penginapan</label>
@@ -124,6 +127,7 @@
                                             id="longitudepenginapan" class="form-control" required readonly>
                                     </div>
                                 </div>
+
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary btn-block">Simpan</button>
                                 </div>

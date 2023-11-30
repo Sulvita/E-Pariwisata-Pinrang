@@ -46,12 +46,13 @@ class RootController extends Controller
         return view('postingan.detail', compact('destination'));
     }
 
-    public function showAllPosts()
-    {
-        $posts = Destinasi::all(); 
+   public function showAllPosts()
+{
+    $posts = Destinasi::orderBy('rating', 'desc')->get();
 
-        return view('postingan.semua-postingan', compact('posts'));
-    }
+    return view('postingan.semua-postingan', compact('posts'));
+}
+
 
     
     public function tambahKomentar(Request $request, Destinasi $destination)

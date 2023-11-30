@@ -370,6 +370,48 @@
                             @endforeach
 
 
+                            <!-- ROW-11 OPEN -->
+                            <div class="">
+                                <div class="container">
+                                    <div class="testimonial-owl-landing buynow-landing reveal revealrotate">
+                                        <div class="row pt-6">
+                                            <div class="col-md-12">
+                                                <div class="card bg-transparent">
+                                                    <div class="card-body pt-5 px-7">
+                                                        <div class="row">
+                                                            <div class="col-lg-9">
+                                                                <h3 class="fw-semibold text-white">Memperluas Jangkauan
+                                                                    Destinasi</h2>
+                                                                    <p class="text-white">Nikmati pengalaman perjalanan
+                                                                        yang lebih kaya dengan opsi untuk menambahkan
+                                                                        destinasi wisata baru. Kami memberikan
+                                                                        kesempatan kepada pengunjung untuk berkontribusi
+                                                                        pada daftar destinasi dengan menyarankan
+                                                                        tempat-tempat yang belum
+                                                                        tersedia di dalamnya. Dengan fitur ini, semua orang
+                                                                        dapat mengeksplorasi lokasi wisata yang belum
+                                                                        pernah terjamah sebelumnya
+                                                                        oleh pengunjung lainnya, dan berbagi destinasi
+                                                                        baru yang menarik bagi komunitas perjalanan
+                                                                        kami.
+                                                                    </p>
+                                                            </div>
+                                                            <div class="col-lg-3 text-end my-auto">
+                                                                <a class="modal-effect btn btn-primary w-lg pt-2 pb-2"
+                                                                    href="{{ route('kreator.create') }}"><i class="fe fe-plus me-2"></i>Tambahkan
+                                                                    Sekarang</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ROW-11 CLOSED -->
+
+
                         </div>
                     </div>
                     <!-- CONTAINER CLOSED-->

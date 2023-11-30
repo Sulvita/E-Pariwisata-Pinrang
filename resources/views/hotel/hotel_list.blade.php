@@ -32,7 +32,7 @@
                                         alt="And this isn't my nose. This is a false one."></a>
                                 <div class="card-body d-flex flex-column">
                                     <h3>{{ $destinasihotel->nama }}</a></h3>
-                                    <small  class="d-block text-muted">{{ \Carbon\Carbon::parse($destinasihotel->created_at)->locale('id')->diffForHumans() }}</small>
+                                    <small  class="d-block text-muted">{{ \Carbon\Carbon::parse($destinasihotel->created_at)->locale('id')->diffForHumans() }} </small>
                                     <div class="text-muted pt-2">{{ $destinasihotel->alamat }}</div>
                                     <div class="text-muted pt-2 text-justify">
                                         {{ Str::limit($destinasihotel->Deskripsi, 500) }}</div>

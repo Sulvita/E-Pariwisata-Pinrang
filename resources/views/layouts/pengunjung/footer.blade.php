@@ -1,5 +1,5 @@
 <!-- FOOTER OPEN -->
-<div class="demo-footr">
+<div class="demo-footer">
     <div class="container">
         <div class="row">
             <div class="card">

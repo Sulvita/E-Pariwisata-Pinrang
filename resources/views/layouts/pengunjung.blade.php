@@ -109,6 +109,9 @@
 
     <!-- CUSTOM JS -->
     <script src="../assets/js/landing.js"></script>
+    
+    <script src="../assets/js/select2.js"></script>
+    <script src="../assets/plugins/select2/select2.full.min.js"></script>
 
 </body>
 

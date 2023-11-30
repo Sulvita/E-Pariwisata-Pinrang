@@ -30,6 +30,9 @@ class PengunjungWisataController extends Controller
             $query->where('kategori', 'wisata');
         }
 
+         // Order by rating descending
+         $query->orderBy('rating', 'desc'); // Ganti 'rating' dengan nama kolom rating yang sesuai
+
         // Get paginated results
         $destinasiWisataList = $query->paginate(10); 
 

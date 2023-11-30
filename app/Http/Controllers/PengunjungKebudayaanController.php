@@ -23,6 +23,10 @@ class PengunjungKebudayaanController extends Controller
             $query->where('kategori', 'kebudayaan');
         }
 
+        
+         // Order by rating descending
+         $query->orderBy('rating', 'desc'); // Ganti 'rating' dengan nama kolom rating yang sesuai
+
         $destinasikebudayaanList = $query->paginate(2); 
 
         return view('kebudayaan.kebudayaan_list', compact('destinasikebudayaanList'));

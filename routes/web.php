@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RootController;
+use App\Http\Controllers\KreatorController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KebudayaanController;
@@ -22,6 +23,11 @@ use App\Http\Controllers\PengunjungKebudayaanController;
 
 
 Route::get('/', [RootController::class, 'index'])->name('deskripsi.index');
+
+Route::get('/kreator/create', [KreatorController::class, 'create'])->name('kreator.create');
+Route::post('/kreator/create', [KreatorController::class, 'store'])->name('kreator.store');
+
+
 Route::get('/semua-postingan', [RootController::class, 'showAllPosts'])->name('semua.postingan');
 Route::get('/destination/{destination}', [RootController::class, 'show'])->name('destination.show');
 Route::post('/destination/{destination}/tambah-komentar', [RootController::class, 'tambahKomentar'])->name('destination.tambah-komentar');
