@@ -8,11 +8,11 @@
 </p>
 
 ## E-PARIWISATA PINRANG
-Selamat datang di aplikasi E-PARIWISATA PINRANG, sebuah proyek perangkat lunak yang dibuat oleh sebagai website developer Zulham Abidin dan berdasarkan Sulvita selaku peneliti. Aplikasi ini merupakan bagian dari upaya untuk menyelesaikan tugas akhir dalam rangka mengejar gelar Sarjana di Jurusan Teknik Informatika dan Komputer, Universitas Negeri Makassar.
+Selamat datang di aplikasi E-PARIWISATA PINRANG, sebuah proyek perangkat lunak yang dibuat oleh Zulham Abidin sebagai website developer perancangan berdasarkan Sulvita selaku peneliti. Aplikasi ini merupakan bagian dari upaya untuk menyelesaikan tugas akhir dalam rangka mengejar gelar Sarjana di Jurusan Teknik Informatika dan Komputer, Universitas Negeri Makassar.
 
 
 Tentang Proyek
-Aplikasi E-PARIWISATA PINRANG adalah produk dari upaya kolaboratif antara Zulham Abidin sebagai pengembang utama dan Zulvite sebagai pembimbing proyek. Proyek ini melibatkan serangkaian tahap pengembangan yang mencakup analisis kebutuhan, perancangan sistem, pengembangan perangkat lunak, serta pengujian dan implementasi.
+Aplikasi E-PARIWISATA PINRANG adalah produk dari upaya kolaboratif antara Zulham Abidin sebagai pengembang utama dan Zulvite sebagai perancang proyek. Proyek ini melibatkan serangkaian tahap pengembangan yang mencakup analisis kebutuhan, perancangan sistem, pengembangan perangkat lunak, serta pengujian dan implementasi.
 
 Tujuan dari aplikasi ini adalah:
 Meningkatkan visibilitas dan promosi destinasi pariwisata di Pinrang.
@@ -48,7 +48,7 @@ Pindah ke direktori proyek yang telah Anda clone, dan jalankan perintah berikut 
 3. **Setting .env**
 
 Salin berkas `.env.example` menjadi `.env` dan konfigurasi pengaturan database Anda di dalam berkas `.env` denngan memasukkan perintah sebagai berikut :
-- cp .env.example .nc
+- cp .env.example .env
 
 4. **Generate Kunci Aplikasi**
 
