@@ -20,6 +20,7 @@ class Destinasi extends Model
         'JamBuka',
         'Deskripsi',
         'Sejarah',
+        'akses',
         'rating',
         'latitude',
         'longitude',

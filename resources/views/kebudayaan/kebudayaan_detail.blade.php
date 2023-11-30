@@ -30,7 +30,7 @@
     }
 </style>
 
-<div class="container">
+<div class="container mt-6">
     <div class="row">
 
         <div class="col-12 col-md-8">
@@ -63,30 +63,36 @@
                 </div>
 
                 <div class="card-body">
-                    <div class="d-md-flex">
+                    <div class="row">
 
-                        <a href="javascript:void(0);" class="d-flex me-4 mb-2">
-                            <i class="fe fe-clock fs-16 me-1 p-3 bg-primary-transparent text-primary bradius"></i>
-                            <div class="mt-3 ms-1 text-muted font-weight-semibold">
-                                {{ $destinasikebudayaan->created_at->diffForHumans() }}
-                            </div>
-                        </a>
+                        <div class="col-6">
+                            <a href="javascript:void(0);" class="d-flex me-4 mb-2">
+                                <i class="fe fe-clock fs-16 me-1 p-3 bg-primary-transparent text-primary bradius"></i>
+                                <div class="mt-3 ms-1 text-muted font-weight-semibold">
+                                    {{ $destinasikebudayaan->created_at->diffForHumans() }}
+                                </div>
+                            </a>
+                        </div>
 
-                        <a href="javascript:void(0);" class="d-flex me-4 mb-2">
-                            <i class="fe fe-calendar fs-16 me-1 p-3 bg-primary-transparent text-primary bradius"></i>
-                            <div class="mt-3 ms-1 text-muted font-weight-semibold">
-                                {{ $destinasikebudayaan->created_at->translatedFormat('l d F Y') }}
-                            </div>
-                        </a>
+                        <div class="col-6">
+                            <a href="javascript:void(0);" class="d-flex me-4 mb-2">
+                                <i class="fe fe-calendar fs-16 me-1 p-3 bg-primary-transparent text-primary bradius"></i>
+                                <div class="mt-3 ms-1 text-muted font-weight-semibold">
+                                    {{ $destinasikebudayaan->created_at->translatedFormat('l d F Y') }}
+                                </div>
+                            </a>
+                        </div>
 
-                        <a href="javascript:void(0);" class="d-flex me-4 mb-2">
-                            <i class="fe fe-star fs-16 me-1 p-3 bg-primary-transparent text-primary bradius"></i>
-                            <div class="mt-3 ms-1 text-muted font-weight-semibold">
-                                Rating: {{ number_format($destinasikebudayaan->averageRating(), 2) }}
-                            </div>
-                        </a>
+                        <div class="col-6">
+                            <a href="javascript:void(0);" class="d-flex me-4 mb-2">
+                                <i class="fe fe-star fs-16 me-1 p-3 bg-primary-transparent text-primary bradius"></i>
+                                <div class="mt-3 ms-1 text-muted font-weight-semibold">
+                                    Rating: {{ number_format($destinasikebudayaan->averageRating(), 2) }}
+                                </div>
+                            </a>
+                        </div>
 
-                        <div class="ms-auto">
+                        <div class="col-6">
                             <a href="javascript:void(0);" class="d-flex mb-2">
                                 <i
                                     class="fe fe-message-square fs-16 me-1 p-3 bg-success-transparent text-success bradius"></i>
@@ -103,13 +109,22 @@
 
                     <div class="row">
 
+                        <style>
+                            .text-indent {
+                                text-indent: 30px !important;
+                            }
+                        </style>
+
                         <div class="col-12">
                             <h3 class="text-center"> {{ $destinasikebudayaan->nama }}</a></h3>
-                            <p class="text-justify"> {{ $destinasikebudayaan->Deskripsi }}</p>
+                            <h5>Deskripsi : </h5>
+                            <p class="text-justify text-indent"> {{ $destinasikebudayaan->Deskripsi }}</p>
+                            <h5 class="mt-4">Sejarah : </h5>
+                            <p class="text-justify text-indent"> {{ $destinasikebudayaan->Sejarah }}</p>
                         </div>
 
                         <div class="row">
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-12">
                                 <div class="d-flex align-items-center mb-3 mt-3">
                                     <div class="me-4 text-center text-primary">
                                         <span><i class="fe fe-map-pin fs-20"></i></span>
@@ -120,7 +135,18 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center mb-3 mt-3">
+                                    <div class="me-4 text-center text-primary">
+                                        <span><i class="fe fe-alert-octagon fs-20"></i></span>
+                                    </div>
+                                    <div>
+                                        <strong>Dapat Diakses Dengan : {{ $destinasikebudayaan->akses }} </strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-12">
                                 <div class="d-flex align-items-center mb-3 mt-3">
                                     <div class="me-4 text-center text-primary">
                                         <span><i class="fe fe-clock fs-20"></i></span>
@@ -131,7 +157,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-12">
                                 <div class="d-flex align-items-center mb-3 mt-3">
                                     <div class="me-4 text-center text-primary">
                                         <span><i class="fe fe-aperture fs-20"></i></span>
@@ -142,7 +168,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-12">
                                 <div class="d-flex align-items-center mb-3 mt-3">
                                     <div class="me-4 text-center text-primary">
                                         <span><i class="fe fe-cast fs-20"></i></span>

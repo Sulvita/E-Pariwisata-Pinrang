@@ -23,6 +23,10 @@ class DestinasiKebudayaanController extends Controller
         $request->validate([
             'nama' => 'required|string|max:255',
             'Deskripsi' => 'required|string',
+            
+            'akses' => 'nullable|string',
+            'Sejarah' => 'nullable|string',
+
             'alamat' => 'required|string|max:255',
             'latitude' => 'required|numeric',
             'longitude' => 'required|numeric',
@@ -45,6 +49,10 @@ class DestinasiKebudayaanController extends Controller
 
         $nama = $request->input('nama');
         $Deskripsi = $request->input('Deskripsi');
+        
+        $akses = $request->input('akses');
+        $Sejarah = $request->input('Sejarah');
+
         $alamat = $request->input('alamat');
         $latitude = $request->input('latitude');
         $longitude = $request->input('longitude');
@@ -57,6 +65,8 @@ class DestinasiKebudayaanController extends Controller
         $kebudayaan = new Destinasi([
             'nama' => $nama,
             'Deskripsi' => $Deskripsi,
+            'akses' => $akses,
+            'Sejarah' => $Sejarah,
             'alamat' => $alamat,
             'latitude' => $latitude,
             'longitude' => $longitude,
@@ -160,6 +170,8 @@ class DestinasiKebudayaanController extends Controller
         $request->validate([
             'nama' => 'required',
             'Deskripsi' => 'required',
+            'akses' => 'nullable|string',
+            'Sejarah' => 'nullable|string',
             'alamat' => 'required|string|max:255',
             'latitude' => 'required|numeric',
             'longitude' => 'required|numeric',
@@ -176,6 +188,10 @@ class DestinasiKebudayaanController extends Controller
         $kebudayaan = Destinasi::find($id);
         $kebudayaan->nama = $request->input('nama');
         $kebudayaan->Deskripsi = $request->input('Deskripsi');
+        
+        $kebudayaan->akses = $request->input('akses');
+        $kebudayaan->Sejarah = $request->input('Sejarah');
+
         $kebudayaan->alamat = $request->input('alamat');
         $kebudayaan->HargaTiket = $request->input('HargaTiket');
         $kebudayaan->FasilitasDestinasi = $request->input('FasilitasDestinasi');

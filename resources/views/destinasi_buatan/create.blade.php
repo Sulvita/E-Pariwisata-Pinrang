@@ -41,6 +41,26 @@
                                             class="form-control" required>
                                     </div>
                                 </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="nama">Kendaraan Akses</label>
+                                        <select name="akses" id="akses" class="form-control">
+                                            <option value="">Pilih Akses</option>
+                                            <option value="Roda 4">Roda 4</option>
+                                            <option value="Roda 2">Roda 2</option>
+                                            <option value="Berjalan Kaki">Berjalan Kaki</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="Sejarah">Sejarah Wisata Buatan</label>
+                                        <input type="text" value="" required name="Sejarah" id="Sejarah" class="form-control" required>
+                                    </div>
+                                </div>
+
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="HargaTiket">Harga Tiket</label>

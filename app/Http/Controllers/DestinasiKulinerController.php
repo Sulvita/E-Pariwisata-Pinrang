@@ -24,6 +24,10 @@ class DestinasiKulinerController extends Controller
             [
                 'nama' => 'required|string|max:255',
                 'alamat' => 'required|string|max:255',
+
+                'akses' => 'nullable|string',
+                'Sejarah' => 'nullable|string',
+
                 'JamBuka' => 'nullable|string|max:255',
                 'Deskripsi' => 'nullable|string',
                 'HargaTiket' => 'nullable|numeric',
@@ -49,6 +53,10 @@ class DestinasiKulinerController extends Controller
 
         $nama = $request->input('nama');
         $alamat = $request->input('alamat');
+
+        $akses = $request->input('akses');
+        $Sejarah = $request->input('Sejarah');
+
         $JamBuka = $request->input('JamBuka');
         $deskripsi = $request->input('Deskripsi');
         $HargaTiket = $request->input('HargaTiket');
@@ -62,6 +70,10 @@ class DestinasiKulinerController extends Controller
         $destinasiBuatan = new Destinasi([
             'nama' => $nama,
             'alamat' => $alamat,
+
+            'akses' => $akses,
+            'Sejarah' => $Sejarah,
+
             'JamBuka' => $JamBuka,
             'Deskripsi' => $deskripsi,
             'FasilitasDestinasi' => $fasilitasDestinasi,
@@ -192,6 +204,10 @@ class DestinasiKulinerController extends Controller
         $request->validate([
             'nama' => 'required',
             'alamat' => 'required',
+
+            'akses' => 'nullable|string',
+            'Sejarah' => 'nullable|string',
+
             'latitude' => 'required|numeric',
             'longitude' => 'required|numeric',
             'latitudepenginapan' => 'nullable|max:255',
@@ -209,6 +225,10 @@ class DestinasiKulinerController extends Controller
 
         $destination->nama = $request->input('nama');
         $destination->alamat = $request->input('alamat');
+
+        $destination->akses = $request->input('akses');
+        $destination->Sejarah = $request->input('Sejarah');
+
         $destination->latitude = $request->input('latitude');
         $destination->longitude = $request->input('longitude');
         $destination->latitudepenginapan = $request->input('latitudepenginapan');

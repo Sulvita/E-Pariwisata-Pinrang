@@ -18,6 +18,10 @@ class KreatorController extends Controller
             [
                 'nama' => 'required|string|max:255',
                 'alamat' => 'required|string|max:255',
+
+                'akses' => 'nullable|string',
+                'Sejarah' => 'nullable|string',
+
                 'HargaTiket' => 'nullable|string|max:255',
                 'FasilitasDestinasi' => 'nullable|string|max:255',
                 'JamBuka' => 'nullable|string|max:255',
@@ -44,6 +48,10 @@ class KreatorController extends Controller
         
         $nama = $request->input('nama');
         $alamat = $request->input('alamat');
+
+        $akses = $request->input('akses');
+        $Sejarah = $request->input('Sejarah');
+
         $hargaTiket = $request->input('HargaTiket');
         $fasilitasDestinasi = $request->input('FasilitasDestinasi');
         $JamBuka = $request->input('JamBuka');
@@ -57,6 +65,10 @@ class KreatorController extends Controller
         $destinasiWisata = new Destinasi([
             'nama' => $nama,
             'alamat' => $alamat,
+
+            'akses' => $akses,
+            'Sejarah' => $Sejarah,
+
             'HargaTiket' => $hargaTiket,
             'FasilitasDestinasi' => $fasilitasDestinasi,
             'JamBuka' => $JamBuka,

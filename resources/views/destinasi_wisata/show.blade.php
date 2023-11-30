@@ -72,6 +72,7 @@
                                         <div>
                                             <h5>Deskripsi{{-- <i class="fe fe-edit-3 text-primary mx-2"></i> --}}</h5>
                                             <p class="text-justify text-indent">{{ $destinasiWisata->Deskripsi }}</p>
+                                            <p class="text-justify text-indent">{{ $destinasiWisata->Sejarah }}</p>
                                         </div>
                                         <hr>
 
@@ -84,6 +85,14 @@
                                                     </div>
                                                     <div>
                                                         <strong>Alamat : {{ $destinasiWisata->alamat }}</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-3 mt-3">
+                                                    <div class="me-4 text-center text-primary">
+                                                        <span><i class="fe fe-alert-octagon fs-20"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <strong>Dapat Diakses Dengan : {{ $destinasiWisata->akses }} </strong>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-center mb-3 mt-3">
