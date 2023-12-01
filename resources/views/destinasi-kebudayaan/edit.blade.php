@@ -72,7 +72,7 @@
                                     <div class="form-group">
                                         <label for="Sejarah">Sejarah Wisata Budaya</label>
                                         <input type="text" required value="{{ $kebudayaan->Sejarah }}" name="Sejarah" id="Sejarah"
-                                            class="form-control" required>
+                                            class="form-control">
                                     </div>
                                 </div>
 

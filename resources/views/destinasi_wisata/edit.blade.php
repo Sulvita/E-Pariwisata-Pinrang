@@ -71,7 +71,7 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="Sejarah">Sejarah Wisata Alam</label>
-                                        <input type="text" required value="{{ $destinasiWisata->Sejarah }}" name="Sejarah" id="Sejarah" class="form-control" required>
+                                        <input type="text" required value="{{ $destinasiWisata->Sejarah }}" name="Sejarah" id="Sejarah" class="form-control">
                                     </div>
                                 </div>
 

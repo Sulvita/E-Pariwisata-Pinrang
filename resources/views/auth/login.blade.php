@@ -3,48 +3,48 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" action="{{ route('login') }}">
-@csrf
+        @csrf
 
-<!-- Email Address -->
-<div>
-    <x-input-label for="email" :value="__('Email')" />
-    <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required
-        autofocus autocomplete="username" />
-    <x-input-error :messages="$errors->get('email')" class="mt-2" />
-</div>
+        <!-- Email Address -->
+        <div>
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required
+                autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
 
-<!-- Password -->
-<div class="mt-4">
-    <x-input-label for="password" :value="__('Password')" />
+        <!-- Password -->
+        <div class="mt-4">
+            <x-input-label for="password" :value="__('Password')" />
 
-    <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
-        autocomplete="current-password" />
+            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                autocomplete="current-password" />
 
-    <x-input-error :messages="$errors->get('password')" class="mt-2" />
-</div>
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
 
-<!-- Remember Me -->
-<div class="block mt-4">
-    <label for="remember_me" class="inline-flex items-center">
-        <input id="remember_me" type="checkbox"
-            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-        <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-    </label>
-</div>
+        <!-- Remember Me -->
+        <div class="block mt-4">
+            <label for="remember_me" class="inline-flex items-center">
+                <input id="remember_me" type="checkbox"
+                    class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
+                <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+            </label>
+        </div>
 
-<div class="flex items-center justify-end mt-4">
-    @if (Route::has('password.request'))
-    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        href="{{ route('password.request') }}">
-        {{ __('Forgot your password?') }}
-    </a>
-    @endif
+        <div class="flex items-center justify-end mt-4">
+            @if (Route::has('password.request'))
+            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                href="{{ route('password.request') }}">
+                {{ __('Forgot your password?') }}
+            </a>
+            @endif
 
-    <x-primary-button class="ml-3">
-        {{ __('Log in') }}
-    </x-primary-button>
-</div>
-</form>
+            <x-primary-button class="ml-3">
+                {{ __('Log in') }}
+            </x-primary-button>
+        </div>
+    </form>
 </x-guest-layout>
 --}}
 
@@ -74,7 +74,7 @@
                     aria-hidden="true">×</span></button>
         </div>
         <div class="toast-body">
-           Kombinasi Email dan Password tidak sesuai
+            Kombinasi Email dan Password tidak sesuai
         </div>
     </div>
     @endif
@@ -87,7 +87,8 @@
 
             <div class="col col-login mx-auto mt-7">
                 <div class="text-center">
-                    <a href="index.html"><img src="../assets/images/brand/logo-3.png" class="header-brand-img" alt=""></a>
+                    <a href="index.html"><img src="../assets/images/brand/logo-3.png" class="header-brand-img"
+                            alt=""></a>
                 </div>
             </div>
             <div class="side-app">
@@ -108,15 +109,16 @@
                                             <label class="col-md-3 form-label" for="email">Email</label>
                                             <div class="col-md-9">
                                                 <input type="email" id="email" name="email" class="form-control"
-                                                    placeholder="" value="e-pariwisata-pinrang@gmail.com" required autofocus
-                                                    autocomplete="email">
+                                                    placeholder="" required autofocus autocomplete="email">
                                             </div>
                                         </div>
                                         <div class=" row mb-2">
                                             <label for="password" class="col-md-3 form-label">Password</label>
                                             <div class="col-md-9 d-flex align-items-center">
-                                                <input type="password" class="form-control" placeholder="" name="password" value="e-pariwisata-pinrang" autocomplete="password" id="password">
-                                                <i class="fa fa-eye" id="showPasswordToggle" style="cursor: pointer; margin-left: 5px;"></i>
+                                                <input type="password" class="form-control" placeholder=""
+                                                    name="password" autocomplete="password" id="password">
+                                                <i class="fa fa-eye" id="showPasswordToggle"
+                                                    style="cursor: pointer; margin-left: 5px;"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -134,8 +136,8 @@
         </div>
     </div>
 
-<script>
-    const passwordInput = document.getElementById('password');
+    <script>
+        const passwordInput = document.getElementById('password');
     const showPasswordToggle = document.getElementById('showPasswordToggle');
 
     showPasswordToggle.addEventListener('click', function () {
@@ -145,7 +147,7 @@
             passwordInput.type = 'password';
         }
     });
-</script>
+    </script>
 
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>

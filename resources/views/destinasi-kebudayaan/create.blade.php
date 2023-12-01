@@ -58,7 +58,7 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="Sejarah">Sejarah Wisata Budaya</label>
-                                        <input type="text" value="" required name="Sejarah" id="Sejarah" class="form-control" required>
+                                        <input type="text" value="" required name="Sejarah" id="Sejarah" class="form-control" >
                                     </div>
                                 </div>
 
